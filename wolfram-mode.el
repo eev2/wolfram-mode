@@ -1,4 +1,4 @@
-;; * wolfram-mode.el --- Mathematica editing and inferior mode.  -*- lexical-binding: t -*-
+;;; wolfram-mode.el --- Mathematica editing and inferior mode.  -*- lexical-binding: t -*-
 
 ;; Filename: wolfram-mode.el
 ;; Description: Wolfram Language (Mathematica) editing and inferior Mode
@@ -298,7 +298,7 @@ See `run-hooks'."
     (`(,_ . ";") (smie-rule-separator kind))
     (`(,_ . ",") (smie-rule-separator kind))
     (`(:elem . ,_) 0)
-    (t nil)))
+    (_ nil)))
 
 (defalias 'wolfram-smie-forward-token 'smie-default-forward-token)
 (defalias 'wolfram-smie-backward-token 'smie-default-backward-token)
